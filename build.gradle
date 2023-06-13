@@ -1,4 +1,5 @@
-plugins id "net.serenity-bdd.serenity-gradle-plugin" version "3.5.1"
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "3.5.0"
     id 'java'
     id 'eclipse'
     id 'idea'
@@ -30,12 +31,13 @@ dependencies {
                 "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
                 "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
                 "org.assertj:assertj-core:${assertJVersion}",
-                "ch.qos.logback:logback-classic:${logbackVersion}"
+                "ch.qos.logback:logback-classic:${logbackVersion}",
+                "io.cucumber:cucumber-junit:7.11.0",
+                "junit:junit:4.13.1"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
-    useJUnitPlatform()
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
 }
