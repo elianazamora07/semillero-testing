@@ -34,6 +34,7 @@ dependencies {
                 "ch.qos.logback:logback-classic:${logbackVersion}",
                 "io.cucumber:cucumber-junit:7.11.0",
                 "junit:junit:4.13.1"
+
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 

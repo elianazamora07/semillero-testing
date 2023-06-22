@@ -16,3 +16,4 @@ Característica: agregar al carrito
       | "teclado gaming" |
     Entonces debe verse 3 items en el carrito de compras
 
+
