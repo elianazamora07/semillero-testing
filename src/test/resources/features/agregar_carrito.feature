@@ -17,3 +17,9 @@ Característica: agregar al carrito
     Entonces debe verse 3 items en el carrito de compras
 
 
+  Escenario: Verificar la redirección de la pagina al intentar hacer un pago
+    Dado que Carlos ha agregado un producto al carrito de compras
+    Cuando Carlos procede al proceso de pago
+    Entonces se muestra la pagina de iniciar sesión
+
+

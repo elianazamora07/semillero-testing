@@ -5,8 +5,8 @@ Característica: Filtrar productos
   Para posteriormente escoger
 
   Escenario: Filtrar una Laptop por marca
-    Cuando  Carlos aplica el filtro de "Laptop" por marca "<MarcaSeleccionada>"
-    Entonces Carlos puede ver el input de "<MarcaSeleccionada>" seleccionado
+    Cuando  aplico el filtro de "Laptop" por marca
+    Entonces el filtro de <MarcaSeleccionada> debe estar seleccionado
 
 
 

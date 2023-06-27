@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
 import static com.amazon.page.DetalleItem.BUT_AGREGAR_CARRITO;
-import static com.amazon.page.ResultadosBusqueda.FILTRO_MARCA;
 import static com.amazon.page.ResultadosBusqueda.ITEM_COMPRA_ENVIO_COLOMBIA;
 
 public class SeleccionarItem {
@@ -14,6 +13,14 @@ public class SeleccionarItem {
         return Task.where("{0} buscando items con envío a Colombia",
                 Click.on(ITEM_COMPRA_ENVIO_COLOMBIA),
                 Click.on(BUT_AGREGAR_CARRITO)
+        );
+
+    }
+
+    public static Performable itemEnvioColombia() {
+        return Task.where("{0} buscando items con envío a Colombia",
+                Click.on(ITEM_COMPRA_ENVIO_COLOMBIA)
+
         );
 
     }

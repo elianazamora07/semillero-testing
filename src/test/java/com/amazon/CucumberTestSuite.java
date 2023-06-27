@@ -10,4 +10,5 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class CucumberTestSuite {}
+public class CucumberTestSuite {
+}

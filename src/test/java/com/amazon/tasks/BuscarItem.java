@@ -16,9 +16,10 @@ public class BuscarItem {
         );
     }
 
-    public static Performable buscarConEnvioColombiaFiltro(String item) {
+    public static Performable buscarItemConEnvioColombia(String item) {
         return Task.where("{0} buscando el item ´" + item + "´ con envío a Colombia",
                 Enter.theValue(item).into(INPUT_BARRA_BUSQUEDA).thenHit(Keys.ENTER)
         );
     }
+
 }
