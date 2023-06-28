@@ -2,7 +2,7 @@ package com.amazon.stepdefinitions;
 
 
 import com.amazon.tasks.BuscarItem;
-import com.amazon.tasks.SeleccionarInput;
+import com.amazon.tasks.SeleccionarInputMarca;
 import com.amazon.tasks.VerificarElementoFiltroMarca;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.is;
 
 ;
 
-public class FiltrarProductosStepDefinitions {
+public class FiltrarProductoMarcaStepDefinitions {
 
 
     @Cuando("aplico el filtro de {string} por marca")
@@ -22,7 +22,7 @@ public class FiltrarProductosStepDefinitions {
         OnStage.theActorCalled("comprador").attemptsTo(
                 Open.url("https://www.amazon.com"),
                 BuscarItem.buscarItemConEnvioColombia(item),
-                SeleccionarInput.conFiltro()
+                SeleccionarInputMarca.conFiltro()
         );
     }
 

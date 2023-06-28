@@ -4,7 +4,7 @@ Característica: filtrar Elegible para Envío Gratis
   Quiero filtrar por Elegible para Envío Gratis
   Para posteriormente comprar
 
-  Escenario: filtrar Elegible para Envío Gratis
-    Cuando Carlos está en la página de resultados de búsqueda de "collares"
-    Entonces se muestra un mensaje indicando que el envío es gratuito para los items
+  Escenario: filtrar un collar por Envio Gratis
+    Cuando aplico el filtro de "collar" por Elegible para Envio Gratis
+    Entonces el filtro de <EnvioGratis> debe estar seleccionado
 
